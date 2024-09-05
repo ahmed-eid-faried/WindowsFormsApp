@@ -209,6 +209,10 @@
             // 
             // button13
             // 
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Location = new System.Drawing.Point(579, 195);
             this.button13.Name = "button13";
             this.button13.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -220,7 +224,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(579, 250);
+            this.button14.Location = new System.Drawing.Point(579, 249);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(179, 31);
             this.button14.TabIndex = 17;
