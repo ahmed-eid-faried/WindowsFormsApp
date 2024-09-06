@@ -58,5 +58,17 @@ namespace WindowsFormsApp
             from2.ShowDialog();
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form from2 = new CheckBoxAndRadioForm();
+            from2.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form from2 = new CheckBoxAndRadioForm();
+            from2.ShowDialog();
+        }
     }
 }
