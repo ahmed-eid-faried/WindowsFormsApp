@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PizzaForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbSize = new System.Windows.Forms.GroupBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbCrustType = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbWhereToEat = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbToppings = new System.Windows.Forms.GroupBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -60,10 +60,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.gbSize.SuspendLayout();
+            this.gbCrustType.SuspendLayout();
+            this.gbWhereToEat.SuspendLayout();
+            this.gbToppings.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,25 +73,25 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(149, 9);
+            this.label1.Location = new System.Drawing.Point(149, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(464, 48);
             this.label1.TabIndex = 1;
             this.label1.Text = "MAKE YOUR PIZZA";
             // 
-            // groupBox1
+            // gbSize
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(35, 60);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(108, 114);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Size";
+            this.gbSize.BackColor = System.Drawing.Color.Transparent;
+            this.gbSize.Controls.Add(this.radioButton5);
+            this.gbSize.Controls.Add(this.radioButton6);
+            this.gbSize.Controls.Add(this.radioButton4);
+            this.gbSize.ForeColor = System.Drawing.Color.White;
+            this.gbSize.Location = new System.Drawing.Point(35, 60);
+            this.gbSize.Name = "gbSize";
+            this.gbSize.Size = new System.Drawing.Size(108, 114);
+            this.gbSize.TabIndex = 10;
+            this.gbSize.TabStop = false;
+            this.gbSize.Text = "Size";
             // 
             // radioButton5
             // 
@@ -130,18 +130,18 @@
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
-            // groupBox2
+            // gbCrustType
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(35, 196);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(108, 78);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Crust Type";
+            this.gbCrustType.BackColor = System.Drawing.Color.Transparent;
+            this.gbCrustType.Controls.Add(this.radioButton1);
+            this.gbCrustType.Controls.Add(this.radioButton3);
+            this.gbCrustType.ForeColor = System.Drawing.Color.White;
+            this.gbCrustType.Location = new System.Drawing.Point(35, 196);
+            this.gbCrustType.Name = "gbCrustType";
+            this.gbCrustType.Size = new System.Drawing.Size(108, 78);
+            this.gbCrustType.TabIndex = 11;
+            this.gbCrustType.TabStop = false;
+            this.gbCrustType.Text = "Crust Type";
             // 
             // radioButton1
             // 
@@ -168,18 +168,18 @@
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // groupBox3
+            // gbWhereToEat
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(189, 196);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(189, 55);
-            this.groupBox3.TabIndex = 12;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Where To Eat";
+            this.gbWhereToEat.BackColor = System.Drawing.Color.Transparent;
+            this.gbWhereToEat.Controls.Add(this.radioButton2);
+            this.gbWhereToEat.Controls.Add(this.radioButton7);
+            this.gbWhereToEat.ForeColor = System.Drawing.Color.White;
+            this.gbWhereToEat.Location = new System.Drawing.Point(189, 196);
+            this.gbWhereToEat.Name = "gbWhereToEat";
+            this.gbWhereToEat.Size = new System.Drawing.Size(189, 55);
+            this.gbWhereToEat.TabIndex = 12;
+            this.gbWhereToEat.TabStop = false;
+            this.gbWhereToEat.Text = "Where To Eat";
             // 
             // radioButton2
             // 
@@ -206,22 +206,22 @@
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
-            // groupBox4
+            // gbToppings
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.checkBox6);
-            this.groupBox4.Controls.Add(this.checkBox1);
-            this.groupBox4.Controls.Add(this.checkBox2);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.checkBox3);
-            this.groupBox4.Controls.Add(this.checkBox4);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(189, 60);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(256, 114);
-            this.groupBox4.TabIndex = 13;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Toppings";
+            this.gbToppings.BackColor = System.Drawing.Color.Transparent;
+            this.gbToppings.Controls.Add(this.checkBox6);
+            this.gbToppings.Controls.Add(this.checkBox1);
+            this.gbToppings.Controls.Add(this.checkBox2);
+            this.gbToppings.Controls.Add(this.checkBox5);
+            this.gbToppings.Controls.Add(this.checkBox3);
+            this.gbToppings.Controls.Add(this.checkBox4);
+            this.gbToppings.ForeColor = System.Drawing.Color.White;
+            this.gbToppings.Location = new System.Drawing.Point(189, 60);
+            this.gbToppings.Name = "gbToppings";
+            this.gbToppings.Size = new System.Drawing.Size(256, 114);
+            this.gbToppings.TabIndex = 13;
+            this.gbToppings.TabStop = false;
+            this.gbToppings.Text = "Toppings";
             // 
             // checkBox6
             // 
@@ -459,21 +459,21 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbToppings);
+            this.Controls.Add(this.gbWhereToEat);
+            this.Controls.Add(this.gbCrustType);
+            this.Controls.Add(this.gbSize);
             this.Controls.Add(this.label1);
             this.Name = "PizzaForm";
             this.Text = "PizzaForm";
-             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gbSize.ResumeLayout(false);
+            this.gbSize.PerformLayout();
+            this.gbCrustType.ResumeLayout(false);
+            this.gbCrustType.PerformLayout();
+            this.gbWhereToEat.ResumeLayout(false);
+            this.gbWhereToEat.PerformLayout();
+            this.gbToppings.ResumeLayout(false);
+            this.gbToppings.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
@@ -484,17 +484,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbSize;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbCrustType;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbWhereToEat;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbToppings;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;

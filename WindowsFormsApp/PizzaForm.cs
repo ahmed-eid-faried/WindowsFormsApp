@@ -175,16 +175,29 @@ namespace WindowsFormsApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            gbSize.Enabled = true;
+            gbCrustType.Enabled = true;
+            gbToppings.Enabled = true;
+            gbWhereToEat.Enabled = true;
             ResetData();
             UpdateData();
             UpdateUi();
         }
- 
-
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Order Placed Successfully");
-
+            bool result = MessageBox.Show("Are you confirm?", "Confirm", MessageBoxButtons.OKCancel) == DialogResult.OK;
+            if (result)
+            {
+                gbSize.Enabled = false;
+                gbCrustType.Enabled = false;
+                gbToppings.Enabled = false;
+                gbWhereToEat.Enabled = false;
+                MessageBox.Show("Order Placed Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Order Placed Canceled");
+            };
         }
     }
 }
