@@ -36,7 +36,7 @@ namespace WindowsFormsApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"C:\Users\AHMED MADY\Downloads\lion.jpg");
+            pictureBox1.Image = Image.FromFile(@"C:\Users\AHMED MADY\source\repos\WindowsFormsApp\WindowsFormsApp\Resources\lion.jpg");
         }
     }
 }
