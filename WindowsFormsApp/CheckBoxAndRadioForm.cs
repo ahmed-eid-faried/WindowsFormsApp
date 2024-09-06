@@ -73,6 +73,31 @@ namespace WindowsFormsApp
             radioButton4.ForeColor = Color.Black;
             radioButton5.ForeColor = Color.Black;
             radioButton6.ForeColor = Color.Blue;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string text = radioButton4.Checked.ToString() + '\n' +
+                          radioButton5.Checked.ToString() + '\n' +
+                          radioButton6.Checked.ToString();
+            MessageBox.Show(text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string text = radioButton7.Checked.ToString() + '\n' +
+              radioButton8.Checked.ToString() + '\n' +
+              radioButton9.Checked.ToString();
+            MessageBox.Show(text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string text = checkBox1.Checked.ToString() + '\n' +
+                          checkBox2.Checked.ToString() + '\n' +
+                          checkBox3.Checked.ToString();
+            MessageBox.Show(text);
         }
     }
 }
