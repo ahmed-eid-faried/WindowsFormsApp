@@ -83,5 +83,17 @@ namespace WindowsFormsApp
             Form from2 = new PizzaForm();
             from2.ShowDialog();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form from2 = new TextBoxForm();
+            from2.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form from2 = new TextBoxForm();
+            from2.ShowDialog();
+        }
     }
 }
