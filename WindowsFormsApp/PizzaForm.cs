@@ -27,25 +27,34 @@ namespace WindowsFormsApp
         bool GreenPeppers = false;
         string toppings = "";
         string Total = "";
-        private void TotalPrice()
+        float CalculateSize()
         {
-            double totalPrice = 0;
-            ///////////////////////////////////////////////////
+            float totalPrice = 0;
             if (Size == "Larg") { totalPrice += 60; }
             else if (Size == "Medium") { totalPrice += 40; }
             else { totalPrice += 20; }
-            ///////////////////////////////////////////////////
-            if (CrustType == "Think Crust") { totalPrice *= 2; }
-            ///////////////////////////////////////////////////
+            return totalPrice;
+        }
+        float CalculateCrustType()
+        {
+            float totalPrice = 0;
+            if (CrustType == "Think Crust") { totalPrice += 20; }
+            else { totalPrice += 0; }
+            return totalPrice;
+        }
+        float CalculateToppings()
+        {
+            float totalPrice = 0;
             if (ExtraChees) totalPrice += 10;
             if (Mushrooms) totalPrice += 10;
             if (Tomatoes) totalPrice += 10;
             if (Onion) totalPrice += 10;
             if (Olives) totalPrice += 10;
             if (GreenPeppers) totalPrice += 10;
-            Total = $"${totalPrice}";
-
+            return totalPrice;
         }
+        float CalculateTotal() { return CalculateToppings() + CalculateCrustType() + CalculateSize(); }
+        private void TotalPrice() { Total = $"${CalculateTotal()}"; }
         private void ResetData()
         {
             Size = "Small";
@@ -126,7 +135,6 @@ namespace WindowsFormsApp
             UpdateData();
 
         }
-
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton4.Checked) Size = "Small";
@@ -145,7 +153,6 @@ namespace WindowsFormsApp
             UpdateData();
 
         }
-
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -159,7 +166,6 @@ namespace WindowsFormsApp
             UpdateData();
 
         }
-
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton7.Checked) WhereToEat = "Eat In";
@@ -172,7 +178,6 @@ namespace WindowsFormsApp
             UpdateData();
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             gbSize.Enabled = true;
@@ -198,6 +203,10 @@ namespace WindowsFormsApp
             {
                 MessageBox.Show("Order Placed Canceled");
             };
+        }
+        private void PizzaForm_Load(object sender, EventArgs e)
+        {
+            button2_Click(sender, e);
         }
     }
 }

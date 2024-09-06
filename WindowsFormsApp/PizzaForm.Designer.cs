@@ -151,6 +151,7 @@
             this.radioButton1.Size = new System.Drawing.Size(79, 17);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
+            this.radioButton1.Tag = "20";
             this.radioButton1.Text = "Think Crust";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -164,6 +165,7 @@
             this.radioButton3.Size = new System.Drawing.Size(74, 17);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
+            this.radioButton3.Tag = "0";
             this.radioButton3.Text = "Thin Crust";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
@@ -466,6 +468,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PizzaForm";
             this.Text = "PizzaForm";
+            this.Load += new System.EventHandler(this.PizzaForm_Load);
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();
             this.gbCrustType.ResumeLayout(false);
