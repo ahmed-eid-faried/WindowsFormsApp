@@ -44,7 +44,7 @@ namespace WindowsFormsApp
             from2.ShowDialog();
         }
 
- 
+
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -68,6 +68,19 @@ namespace WindowsFormsApp
         private void button7_Click(object sender, EventArgs e)
         {
             Form from2 = new CheckBoxAndRadioForm();
+            from2.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            Form from2 = new PizzaForm();
+            from2.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form from2 = new PizzaForm();
             from2.ShowDialog();
         }
     }

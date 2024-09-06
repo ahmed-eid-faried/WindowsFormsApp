@@ -76,6 +76,12 @@
     <Compile Include="MessageBoxForm.Designer.cs">
       <DependentUpon>MessageBoxForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PizzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PizzaForm.Designer.cs">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CheckBoxAndRadioForm.resx">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxForm.resx">
       <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PizzaForm.resx">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
