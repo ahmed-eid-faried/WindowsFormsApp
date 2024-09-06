@@ -124,5 +124,17 @@ namespace WindowsFormsApp
             Form from = new PictureForm2();
             from.ShowDialog();
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            Form form = new DrawForm();
+            form.Show();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Form form = new DrawForm();
+            form.ShowDialog();
+        }
     }
 }
