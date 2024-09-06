@@ -466,8 +466,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PizzaForm";
             this.Text = "PizzaForm";
-            this.Load += new System.EventHandler(this.PizzaForm_Load_1);
-            this.groupBox1.ResumeLayout(false);
+             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
