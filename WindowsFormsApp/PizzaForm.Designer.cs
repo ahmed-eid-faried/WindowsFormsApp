@@ -358,10 +358,10 @@
             this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(133, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
+            this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 24;
             this.label4.Tag = "";
-            this.label4.Text = "\"\"\"\"\"\"\"\"\"\"";
+            this.label4.Text = "Small";
             // 
             // label5
             // 
@@ -393,7 +393,7 @@
             this.label10.Size = new System.Drawing.Size(57, 16);
             this.label10.TabIndex = 27;
             this.label10.Text = "\"\"\"\"\"\"\"\"\"\"";
-            // 
+             // 
             // label11
             // 
             this.label11.AutoSize = true;

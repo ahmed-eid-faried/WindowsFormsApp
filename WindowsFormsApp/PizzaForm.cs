@@ -54,7 +54,11 @@ namespace WindowsFormsApp
             return totalPrice;
         }
         float CalculateTotal() { return CalculateToppings() + CalculateCrustType() + CalculateSize(); }
-        private void TotalPrice() { Total = $"${CalculateTotal()}"; }
+        private void TotalPrice()
+        {
+            Total = $"${CalculateTotal()}";
+            label12.Text = Total;
+        }
         private void ResetData()
         {
             Size = "Small";
@@ -66,23 +70,28 @@ namespace WindowsFormsApp
             Onion = false;
             Olives = false;
             GreenPeppers = false;
+            toppings = "No Toppings";
+        }
+        private void UpdateToppings()
+        {
             toppings = "";
+            if (ExtraChees) toppings += "Extra Chees, ";
+            if (Mushrooms) toppings += "Mushrooms, ";
+            if (Tomatoes) toppings += "Tomatoes, ";
+            if (Onion) toppings += "Onion, ";
+            if (Olives) toppings += "Olives, ";
+            if (GreenPeppers) toppings += "Green Peppers, ";
+            if (toppings.EndsWith(", ")) toppings = toppings.Substring(0, toppings.Length - 2);
+            if (toppings == "") toppings += "No Toppings";
+            label10.Text = toppings;
         }
         private void UpdateData()
         {
             label4.Text = Size;
             label5.Text = CrustType;
             label8.Text = WhereToEat;
-            toppings = "";
-            if (ExtraChees) toppings += " Extra Chees ";
-            if (Mushrooms) toppings += " Mushrooms ";
-            if (Tomatoes) toppings += " Tomatoes ";
-            if (Onion) toppings += " Onion ";
-            if (Olives) toppings += " Olives ";
-            if (GreenPeppers) toppings += " Green Peppers ";
-            label10.Text = toppings;
+            UpdateToppings();
             TotalPrice();
-            label12.Text = Total;
         }
         private void UpdateUi()
         {
@@ -208,5 +217,6 @@ namespace WindowsFormsApp
         {
             button2_Click(sender, e);
         }
+
     }
 }
