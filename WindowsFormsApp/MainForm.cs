@@ -95,5 +95,22 @@ namespace WindowsFormsApp
             Form from2 = new TextBoxForm();
             from2.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form from = new PictureForm();
+            from.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Form from = new PictureForm();
+            from.ShowDialog();
+        }
     }
 }

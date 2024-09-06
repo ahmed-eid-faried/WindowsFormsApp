@@ -57,6 +57,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(208, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Max Length 20";
             // 
             // textBox2
             // 
