@@ -136,5 +136,17 @@ namespace WindowsFormsApp
             Form form = new DrawForm();
             form.ShowDialog();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Form form = new MaskedTextBoxForm();
+            form.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Form form = new MaskedTextBoxForm();
+            form.ShowDialog();
+        }
     }
 }
