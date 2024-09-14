@@ -52,6 +52,12 @@
     <Compile Include="CheckBoxAndRadioForm.Designer.cs">
       <DependentUpon>CheckBoxAndRadioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComboBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBoxForm.Designer.cs">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DockTextBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="CheckBoxAndRadioForm.resx">
       <DependentUpon>CheckBoxAndRadioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxForm.resx">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DockTextBoxForm.resx">
       <DependentUpon>DockTextBoxForm.cs</DependentUpon>

@@ -258,8 +258,12 @@
             this.Controls.Add(this.maskedTextBox6);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
+            this.HelpButton = true;
             this.Name = "MaskedTextBoxForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "MaskedTextBoxForm";
+            this.Load += new System.EventHandler(this.MaskedTextBoxForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

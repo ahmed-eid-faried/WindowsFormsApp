@@ -51,5 +51,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void MaskedTextBoxForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

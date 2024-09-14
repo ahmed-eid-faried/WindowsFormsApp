@@ -148,5 +148,18 @@ namespace WindowsFormsApp
             Form form = new MaskedTextBoxForm();
             form.ShowDialog();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Form form = new ComboBoxForm();
+            form.Show();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+            Form form = new ComboBoxForm();
+            form.ShowDialog();
+        }
     }
 }

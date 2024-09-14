@@ -49,6 +49,10 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -281,11 +285,57 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
+            // button21
+            // 
+            this.button21.ForeColor = System.Drawing.Color.Blue;
+            this.button21.Location = new System.Drawing.Point(206, 379);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(127, 36);
+            this.button21.TabIndex = 22;
+            this.button21.Text = "ComboBox Dialog";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.ForeColor = System.Drawing.Color.Blue;
+            this.button22.Location = new System.Drawing.Point(52, 379);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(88, 36);
+            this.button22.TabIndex = 21;
+            this.button22.Text = " ComboBox  Form";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.ForeColor = System.Drawing.Color.Blue;
+            this.button23.Location = new System.Drawing.Point(619, 379);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(127, 36);
+            this.button23.TabIndex = 24;
+            this.button23.Text = " MaskedTextBox Dialog";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.ForeColor = System.Drawing.Color.Blue;
+            this.button24.Location = new System.Drawing.Point(465, 379);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(88, 36);
+            this.button24.TabIndex = 23;
+            this.button24.Text = "MaskedTextBox Form";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 416);
+            this.ClientSize = new System.Drawing.Size(800, 493);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button24);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button22);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button17);
@@ -338,5 +388,9 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
     }
 }
