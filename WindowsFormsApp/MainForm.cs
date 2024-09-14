@@ -161,5 +161,12 @@ namespace WindowsFormsApp
             Form form = new ComboBoxForm();
             form.ShowDialog();
         }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
+            Form form = new LinkLableForm();
+            form.Show();
+        }
     }
 }
